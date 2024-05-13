@@ -2,8 +2,7 @@
 
 Install k6 cli https://grafana.com/docs/k6/latest/set-up/install-k6/ 
 
-Takes an CSV 3scale.csv in the following format
-
+Takes an CSV 3scale.csv 
 
 
 | **Request Per Day** | **Request Per Minute** |
