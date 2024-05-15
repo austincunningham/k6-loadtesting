@@ -12,9 +12,9 @@ export let options = {
   scenarios: {
     constant_request_rate: {
       executor: 'constant-arrival-rate',
-      rate: Number.parseInt(`${__ENV.RPM}`),
+      rate: 69420, //Number.parseInt(`${__ENV.RPM}`),
       timeUnit: '1m',
-      duration: '10m',
+      duration: '40m',
       preAllocatedVUs: 40,
       maxVUs: 100
     },
@@ -25,7 +25,7 @@ export default function () {
   //const res = http.get('<3scale api staging url from example curl request here>');
   // Iterate over each URL and perform a GET request
   for (let i = 0; i < urls.length; i++) {
-    const url = addProtocol(urls[i][0]); // Assuming the URL is in the first column of the CSV
+    const url = addProtocol(urls[i][0]) + urls[i][1]; // Assuming the URL is in the first column of the CSV
     const res = http.get(url);
     
     // Check if the request was successful
